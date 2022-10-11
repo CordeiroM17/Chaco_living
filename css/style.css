@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fuente1 {
+    font-family: 'Segoe UI';
+}
+
+/* ---------------Header--------------- */
+
+header {
+    height: 80px; width: 100%;
+}
+
+nav {
+    height: 100%; width: 100%;
+    background-color: #0e9e2c;
+    display: flex;
+}
+
+.nav__logo__container {
+    margin-left: 10%;
+    height: 100%; width: 30%;
+}
+
+.nav__logo__container a {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 80px; width: 180px;
+}
+
+.nav__menu__icon__container {
+    display: none;
+}
+
+.menu__icon {
+    display: none;
+}
+
+.nav__list__container {
+    display: flex;
+    height: 100%; width: 100%;
+    align-items: center;
+    justify-content: right;
+    margin-right: 10%;
+}
+
+.nav__list__container ul li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__list__container ul {
+    list-style: none;
+}
+
+.nav__list__container ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.nav__list__container ul li a:hover {
+    color: #0b0b0b;
+}
+
+@media screen and (max-width: 900px) {
+
+    nav {
+        justify-content: space-between;
+    }
+    
+    .nav__list__container {
+        display: none;
+    }
+
+    .nav__menu__icon__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+    }
+
+    .menu__icon {
+        display: block;
+        height: 50px; width: 50px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+
+    header {
+        height: 60px;
+    }
+
+    .logo {
+        height: 60px; width: 140px;
+    }
+
+    .menu__icon {
+        height: 30px; width: 30px;
+    }
+}
+
+/* ---------------Main Index--------------- */
+/* Texto debajo del logo principal */
+
+.main__principal {
+    height: 600px; width: 100%;
+    background-image: url(../images/fondo__1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__principal__container {
+    height: 60%; width: 100%;
+}
+
+.principal__container__text {
+    height: 100%; width: 60%;
+    margin-left: 10%;
+}
+
+.principal__container__text h1 {
+    font-size: 60px;
+    padding-top: 90px;
+    text-transform: uppercase;
+}
+
+.principal__container__text h2 {
+    font-size: 20px;
+}
+
+.principal__container__text p {
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .main__principal {
+        background-image: none;
+    }
+
+    .main__principal__container {
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        background-image: url(../images/fondo__1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    }
+
+    .principal__container__text {
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal__container__text h1 {
+        padding-top: 30px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+
+    .main__principal {
+        height: 500px;
+    }
+
+    .main__principal__container {
+        height: 40%;
+    }
+
+    .principal__container__text h1 {
+        font-size: 30px;
+    }
+
+    .principal__container__text h2 {
+        font-size: 14px;
+    }
+
+    .principal__container__text p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 487px) {
+
+    .main__principal {
+        height: 800px;
+    }
+
+    .principal__container__text h1 {
+        font-size: 25px;
+        padding-top: 60px;
+    }
+
+    .principal__container__text h2 {
+        font-size: 12px;
+    }
+}
+
+/* Contenedor con texto y un boton */
+
+.main__box__container {
+    height: 40%; width: 100%;
+}
+
+.box__container {
+    height: 100px;
+    display: flex;
+    margin: 0 10%;
+    background-color: #FFFFFF;
+    border-radius: 20px 40px;
+}
+
+.box__container__text {
+    display: flex;
+    height: 100%; width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__container__text p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.box__container__text button {
+    height: 40px; width: 120px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    color: #0b0b0b;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:900px) {
+
+    .main__box__container {
+        height: 50%;
+    }
+
+    .box__container {
+        border-radius: 0;
+        margin: 0%;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+
+    .box__container__text {
+        height: 25%; width: 50%;
+        border-bottom: 1px solid #0b0b0b;
+    }
+
+    .sin__borde {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .main__box__container {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 487px) {
+
+    .box__container__text {
+        width: 60%;
+    }
+}
+
+/* ---------------Main empresa--------------- */
+
+.main__empresa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "parte_1 parte_2 parte_3"
+    "parte_4 parte_5 parte_6";
+    justify-items: center;
+    background-image: url(../images/fondo__1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.empresa__box {
+    display: flex;
+    height: 80px; width: 250px;
+    border: 1px solid #0b0b0b;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.empresa__box h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.container1 {
+    grid-area: parte_1;
+}
+
+.container2 {
+    grid-area: parte_2;
+}
+
+.container3 {
+    grid-area: parte_3;
+}
+
+.container4 {
+    grid-area: parte_4;
+}
+
+.container6 {
+    grid-area: parte_6;
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    .main__empresa {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "parte_1 parte_2"
+        "parte_3 parte_4"
+        "parte_5 parte_6";
+    }
+
+    .empresa__box {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 704px) {
+
+    .main__empresa {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "parte_1"
+        "parte_2"
+        "parte_3"
+        "parte_4"
+        "parte_5"
+        "parte_6";
+    }
+
+    .empresa__box {
+        margin: 20px 0;
+    }
+
+    .empresa__box h2 {
+        font-size: 18px;
+    }
+}
+
+/* ---------------Main muebles--------------- */
+/* Contenedor con texto */
+
+.container__text__box {
+    height: 100%;
+}
+
+.muebles__container__text {
+    grid-area: telas;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container__text__telas {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__text__telas p {
+    padding: 20px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.container__text__telas img {
+    height: 80%; width: 150px;
+}
+
+.container__text__telas--button {
+    justify-content: center;
+}
+
+.container__text__telas--button p {
+    font-size: 16px;
+    text-transform: none;
+    text-align: center;
+}
+
+.container__text__telas--button button {
+    height: 50px; width: 150px;
+}
+
+
+/* Contenedor con muebles */
+
+.main__muebles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.8fr repeat(2, 1fr);
+    grid-template-areas:
+    "telas telas telas"
+    "parte2 parte3 parte4"
+    "parte5 parte6 parte7";
+}
+
+.container__muebles1 {
+    grid-area: parte2;
+}
+
+.container__muebles2 {
+    grid-area: parte3;
+}
+
+.container__muebles3 {
+    grid-area: parte4;
+}
+
+.container__muebles4 {
+    grid-area: parte5;
+}
+
+.container__muebles5 {
+    grid-area: parte6;
+}
+
+.container__muebles6 {
+    grid-area: parte7;
+}
+
+.muebles__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.muebles__card {
+    display: flex;
+    flex-direction: column;
+    height: 400px; width: 300px;
+    border: 1px solid #0b0b0b;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.muebles__card img {
+    height: 200px; width: 100%;
+}
+
+.muebles__card h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.muebles__card h3 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.muebles__card p {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .main__muebles {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 0.4fr) repeat(3, 1fr);
+        grid-template-areas:
+        "telas telas"
+        "telas telas"
+        "parte2 parte3"
+        "parte4 parte5"
+        "parte6 parte7";
+    }
+}
+
+@media screen and (max-width: 704px) {
+    
+    .main__muebles {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr repeat(6, 1fr);
+        grid-template-areas:
+        "telas"
+        "parte2" 
+        "parte3"
+        "parte4" 
+        "parte5"
+        "parte6" 
+        "parte7";
+    }
+
+    .container__text__telas p {
+        font-size: 16px;
+    }
+
+    .container__text__telas--button p {
+        font-size: 14px;
+    }
+
+}
+
+/* ---------------Footer--------------- */
+
+footer {
+    display: flex;
+    height: 200px; width: 100%;
+    background-color: #0b0b0b;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer__container__images {
+    margin-top: 50px;
+}
+
+.footer__container__images a img {
+    height: 50px; width: 50px;
+}
+
+.footer__text {
+    color: #FFFFFF;
+    font-size: 12px;
+}
