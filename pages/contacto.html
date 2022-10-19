@@ -4,36 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"> 
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
-
     <title>Chaco Living</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>    
     
     <!-- Barra de navegacion -->
 
     <header>
-        <nav>
-            <div class="nav__logo__container">
-                <a href="../index.html">
-                    <img class="logo" src="../images/logo.jpg" alt="Logo">
-                </a>
-            </div>
-            <div class="nav__menu__icon__container">
-                <img class="menu__icon" src="../images/menu__icon.png" alt="">
-            </div>
-            <div class="nav__list__container">
-                <ul>
-                    <li><a class="fuente1" href="../index.html">Inicio</a></li>
-                    <li><a class="fuente1" href="empresa.html">Empresa</a></li>
-                    <li><a class="fuente1" href="muebles.html">Muebles</a></li>
-                    <li><a class="fuente1" href="consultas.html">Consultas</a></li>
-                    <li><a class="fuente1" href="contacto.html">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="nav_container container-fluid">
+                <div class="nav__logo__container">
+                    <a href="../index.html">
+                        <img class="logo" src="../images/logo.jpg" alt="Logo">
+                    </a>
+                </div>
+                <button class="navbar_btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="row nav__list__container collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="muebles.html">Muebles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="consultas.html">Consultas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -94,5 +109,8 @@
             <p class="footer__text">® 2022 Chaco Living</p>                     <!-- Copyright -->
         </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
