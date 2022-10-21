@@ -132,8 +132,7 @@ nav {
 /* Texto debajo del logo principal */
 
 .main__principal {
-    height: 100%;
-    background-image: url(../images/fondo__1.jpg);
+    background-image: url(../images/fondo__index.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -287,6 +286,13 @@ nav {
 /* ---------------Main empresa--------------- */
 
 .main__empresa {
+    background-image: url(../images/fondo__empresa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.empresa {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -294,50 +300,97 @@ nav {
     "parte_1 parte_2 parte_3"
     "parte_4 parte_5 parte_6";
     justify-items: center;
-    background-image: url(../images/fondo__1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .empresa__box {
     display: flex;
-    height: 80px; width: 250px;
-    border: 1px solid #0b0b0b;
-    margin: 50px 0;
+    height: 150px; width: 300px;
+    margin: 100px 0;
+    padding: 0%;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
 }
 
-.empresa__box h2 {
+.main__button {
+    height: 100%; width: 100%;
+    border-radius: 10px;
+    border: none;
+    background:none;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main__button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.empresa__box button span{
     text-transform: uppercase;
     font-size: 22px;
 }
 
+.modal-header h1 {
+    text-transform: uppercase;
+}
+
+.modal-body img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
 .container1 {
     grid-area: parte_1;
+    background-image: url(../images/empresa/nuestra_historia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container2 {
     grid-area: parte_2;
+    background-image: url(../images/empresa/fabricacion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container3 {
     grid-area: parte_3;
+    background-image: url(../images/empresa/embalaje.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container4 {
     grid-area: parte_4;
+    background-image: url(../images/empresa/fsc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container5 {
+    grid-area: parte_5;
+    background-image: url(../images/empresa/logistica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container6 {
     grid-area: parte_6;
+    background-image: url(../images/empresa/rsc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
 
 @media screen and (max-width:992px) {
 
-    .main__empresa {
+    .empresa {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: 
@@ -353,7 +406,7 @@ nav {
 
 @media screen and (max-width: 704px) {
 
-    .main__empresa {
+    .empresa {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
         grid-template-areas: 
@@ -366,10 +419,12 @@ nav {
     }
 
     .empresa__box {
+        height: 100px; width: 250px;
         margin: 20px 0;
     }
 
-    .empresa__box h2 {
+    .empresa__box button span{
+        text-transform: uppercase;
         font-size: 18px;
     }
 }
@@ -539,14 +594,14 @@ nav {
 /* ---------------Footer--------------- */
 
 footer {
-    height: 200px;
+    height: 100%;
     background-color: #0b0b0b;
     justify-content: center;
     text-align: center;
 }
 
 .footer__container__images {
-    margin-top: 50px;
+    margin: 40px 0 15px 0;
 }
 
 .footer__container__images a img {

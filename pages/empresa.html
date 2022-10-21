@@ -15,11 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="container-fluid">
 
         <!-- Barra de navegacion -->
         
-    <header>
+    <header class="row">
         <nav class="navbar navbar-expand-lg">
             <div class="nav_container container-fluid">
                 <div class="nav__logo__container">
@@ -55,51 +55,203 @@
 
         <!-- Main -->
 
-    <main class="main__empresa">
+    <main class="row main__empresa">
 
-        <!-- Cajas -->
+        <div class="filtro empresa">
 
-        <section class="empresa__box container1">
-            <h2 class="fuente1">Nuestra historia</h2>
-        </section>
+            <!-- BOX 1 -->
 
-        <section class="empresa__box container2">
-            <h2 class="fuente1">Fabricacion</h2>
-        </section>
+            <section class="empresa__box container1">
+                        <!-- Button trigger modal -->
+                <button type="button" class="main__button main__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#box__1">
+                    <span>Nuestra Historia</span>
+                </button>
+                
+                        <!-- Modal -->
+                <div class="modal fade" id="box__1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Nuestra Historia</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/empresa/nuestra_historia.jpg" alt="Nuestra Historia">
+                                <p>Somos una empresa familiar con mas de 10 años en el rubro.</p>
+                                <p><b>Nuestra Misión:</b></p>
+                                <p>Diseñar, producir y distribuir muebles de madera modernos, con tendencia, haciendo foco en la "calidad y responsabilidad" logrando satisfacer necesidades y espectativas de nuestros clientes, generando valor y desarrollo tanto para la empresa como para el personal.</p>
+                                <p><b>Visión:</b></p>
+                                <p>Ser reconocidos en la Región Norte del País como la Empresa Líder en Diseño, Producción y Distribución de muebles para living y comedor, llegando de manera progresiva con la misma ilusión de penetrar en la totalidad del territorio "Nacional" pregonando el trabajo dedicado como base de la ventaja competitiva que nos identifique y diferencie de la competencia.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section class="empresa__box container3">
-            <h2 class="fuente1">Logistica</h2>
-        </section>
+            <!-- BOX 2 -->
 
-        <section class="empresa__box container4">
-            <h2 class="fuente1">Embalaje</h2>
-        </section>
+            <section class="empresa__box container2">
+                        <!-- Button trigger modal -->
+                <button type="button" class="main__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#box__2">
+                    <span>Fabricacion</span>
+                </button>
+                
+                        <!-- Modal -->
+                <div class="modal fade" id="box__2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Fabricacion</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/empresa/fabricacion.jpg" alt="Fabricacion">
+                                <p>El perfecto equilibrio entre las nuevas tecnologías y la continua capacitación del RRHH logran un perfecto acabado de una fina textura, lo que hace, que nuestros productos embellezcan los ambientes y perduren en el tiempo. La materia prima utilizada es sometida a un riguroso control de calidad y humedad, secada en modernos hornos, lo que asegura un trabajo apropiado y una calidad inalterable.</p>
+                                <p>Durante estos años hemos logrado desarrollar y optimizar un proceso productivo que nos permite responder de forma eficiente, dinámica y satisfactoria la demanda de nuestros clientes. Este proceso involucra etapas de:<b> diseño, vanguardista, desarrollo productivo y control de calidad</b>, logrando un mueble final en óptimas condiciones, respondiendo a los merrarltos stan
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section class="empresa__box container5">
-            <h2 class="fuente1">Direccion</h2>
-        </section>
-        
-        <section class="empresa__box container6">
-            <h2 class="fuente1">Rsc</h2>
-        </section>
+            <!-- BOX 3 -->
+
+            <section class="empresa__box container3">
+                        <!-- Button trigger modal -->
+                <button type="button" class="main__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#box__3">
+                    <span>Embalaje</span>
+                </button>
+                
+                        <!-- Modal -->
+                <div class="modal fade" id="box__3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Embalaje</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/empresa/embalaje.jpg" alt="Embalaje">
+                                <p>Nuestros productos salen de fábrica perfectamentes embalados en cajas de cartón, para una fácil transportación y como protección de nuestros muebles, asi de esta manera llegan a destino sin sufrir alguna anomalia.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BOX 4 -->
+
+            <section class="empresa__box container4">
+                        <!-- Button trigger modal -->
+                <button type="button" class="main__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#box__4">
+                    <span>Comprometidos con el medio ambiente</span>
+                </button>
+                
+                        <!-- Modal -->
+                <div class="modal fade" id="box__4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Comprometidos con el medio ambiente</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/empresa/fsc.jpg" alt="fsc">
+                                <p>Trabajamos con maderas <b> REFORESTADA </b> y <b>CERTIFICADAS</b>, para cuidar el medio ambiente.</p>
+                                <p>La <b>CERTIFICACIÓN FSC®</b> (Forest Stewardship Council) es un proceso de evaluación al que se somete de forma voluntaria una Unidad de Gestión o empresa forestal, y que es realizado por una tercera parte independiente (entidad certificadora), a través de auditorías de campo y consultas con todos los implicados.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BOX 5 -->
+
+            <section class="empresa__box container5">
+                        <!-- Button trigger modal -->
+                <button type="button" class="main__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#box__5">
+                    <span>Logistica</span>
+                </button>
+                
+                        <!-- Modal -->
+                <div class="modal fade" id="box__5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Logistica</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/empresa/logistica.jpg" alt="Logistica">
+                                <p>Trabajamos con la Logistica dia a dia para mejorar la atención y entregas.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BOX 6 -->
+
+            <section class="empresa__box container6">
+                        <!-- Button trigger modal -->
+                <button type="button" class="main__button btn btn-primary" data-bs-toggle="modal" data-bs-target="#box__6">
+                    <span>RSC</span>
+                </button>
+                
+                        <!-- Modal -->
+                <div class="modal fade" id="box__6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">RSC</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/empresa/rsc.jpg" alt="RSC">
+                                <p>La <b>responsabilidad social corporativa (RSC)</b> también llamada responsabilidad social empresarial (RSE) o inversión socialmente responsable, se define como la contribución activa y voluntaria al mejoramiento social, económico y ambiental por parte de las empresas, generalmente con el objetivo de mejorar su situación</p>
+                                <p>Evento realizado por un grupo de jóvenes, sin fines de lucro, cuya finalidad es ayudar a juntar fondos, a los chicos de pre-promo y promocion de los colegios secundarios por medio de una Jornada SANA, con pintadas de banderas y concursos de bailes, a su vez donan Pañales a Neonatologia del Hospital 4 de Julio</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     
-    <!-- Footer -->
+        <!-- Footer -->
 
-    <footer>
-        <div class="footer__container__images">
+    <footer class="row">
+        <div class="col-12 footer__container__images">
             <a href="#">                <!-- Agregar links -->
-                <img src="../images/instagram__logo.png" alt="Instagram">
+                <img src="../images/instagram.png" alt="Instagram">
             </a>
             <a href="#">                <!-- Agregar links -->
-                <img src="../images/facebook__logo.png" alt="Facebook">
+                <img src="../images/facebook.png" alt="Facebook">
             </a>
             <a href="#">                <!-- Agregar links -->
-                <img src="../images/whatsapp__logo.png" alt="Gmail">
+                <img src="../images/whatsapp.png" alt="whatsapp">
             </a>
-            <h3 class="footer__text fuente1">Contactenos por nuestras distintas redes sociales</h3>
-            <p class="footer__text">® 2022 Chaco Living</p>                     <!-- Copyright -->
         </div>
+        <h3 class="col-12 fuente1">Contactenos por nuestras distintas redes sociales</h3>
+        <p class="col-12 fuente1">® 2022 Chaco Living</p>                     <!-- Copyright -->
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
