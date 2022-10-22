@@ -97,6 +97,7 @@ nav {
     .nav__logo__container {
         height: 80px; width: 180px;
         background: none;
+        margin-left: 6%;
     }
 
     .logo {
@@ -104,7 +105,7 @@ nav {
     }
 
     .navbar_btn {
-        margin-right: 10%;
+        margin-right: 6%;
     }
 
     .nav__list__container {
@@ -223,6 +224,7 @@ nav {
     margin: 0 10%;
     background-color: #FFFFFF;
     border-radius: 20px 40px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.9);
 }
 
 .box__container__text {
@@ -595,7 +597,6 @@ nav {
 
 /* Contenedor con muebles */
 
-
 .muebles__box {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -722,6 +723,246 @@ nav {
 
     .card {
         margin: 30px 0;
+    }
+}
+
+/* ---------------Main contacto--------------- */
+
+/* Pad con informacion */
+
+.contacto__container__text {
+    width: 35%;
+    padding: 0;
+    background-color: #0e9e2c;
+}
+
+.container__text__box {
+    padding: 100px 10% 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__text__box h1 {
+    font-size: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.container__text__box h2 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.simple__box {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.simple__box h3 {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+    
+    .container__text__box {
+        padding: 50px 8% 50px 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container__text__box h1 {
+        font-size: 26px;
+    }
+    
+    .container__text__box h2 {
+        font-size: 18px;
+    }
+    
+    .simple__box {
+        width: 100%;
+        background-color: white;
+        border-radius: 15px;
+        margin-top: 30px;
+    }
+    
+    .simple__box h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+
+    .contacto__container__text {
+        width: 100%;
+    }
+
+    .container__text__box h1 {
+        font-size: 20px;
+    }
+
+    .container__text__box h2 {
+        font-size: 4;
+    }
+}
+
+/* Formulario */
+
+.contacto__container__form {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__container {
+    width: 70%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,0.1fr);
+    grid-template-areas:
+    "name surname"
+    "email email"
+    "message message"
+    "button button";
+}
+
+.form__group__name {
+    display: flex;
+    flex-direction: column;
+    grid-area: name;
+}
+
+.form__group__name input {
+    width: 90%;
+}
+
+.form__group__surname {
+    display: flex;
+    flex-direction: column;
+    grid-area: surname;
+}
+
+.form__group__surname input {
+    width: 100%;
+}
+
+.form__group__email {
+    display: flex;
+    flex-direction: column;
+    grid-area: email;
+}
+
+.form__group__email input {
+    width: 100%;
+}
+
+.form__group__message {
+    display: flex;
+    flex-direction: column;
+    grid-area: message;
+}
+
+.form__group__message textarea {
+    height: 100px; width: 100%;
+    border-radius: 5px;
+    background-color: rgba(230, 230, 230, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    outline: none;
+}
+
+.form__group__message textarea:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form__group__message textarea:focus {
+    background-color: #FFFFFF;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.form__button {
+    grid-area: button;
+    font-size: 20px;
+    height: 50px;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.form__button:hover {
+    background-color: #27ae60;
+}
+
+.form__group {
+    padding-bottom: 20px;
+}
+
+.form__group label {
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.form__group input {
+    border-radius: 5px;
+    background-color: rgba(230, 230, 230, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    height: 40px;
+    outline: none;
+}
+
+.form__group input:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form__group input:focus {
+    background-color: #FFFFFF;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+@media screen and (max-width: 991px) {
+
+    .form__group label {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+
+    .contacto__container__form {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .form__group label {
+        font-size: 14px;
+    }
+
+    .form__group input {
+        height: 30px;
+    }
+
+    .form__button {
+        height: 40px;
+    }
+
+    .form__group__message textarea {
+        height: 60px;
     }
 }
 
