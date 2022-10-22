@@ -36,7 +36,7 @@
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="empresa.html">Empresa</a>
+                            <a class="nav-link"  href="empresa.html">Empresa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="muebles.html">Muebles</a>
@@ -57,76 +57,236 @@
 
     <main class="row main__muebles">
 
+            
         <!-- Contenedor con texto -->
+        <section class="muebles__container__text filtro">
+            <article class="container__telas telas-1">
+                <div class="telas">
+                    <h2>Cuero Tex</h2>
+                    <img src="../images/muebles/cuero__tex.jpg" alt="">
+                </div>
+            </article>
 
-        <section class="muebles__container__text">
-            <article class="container__text__telas">
-                <p class="fuente1">Tapizados grupo 1</p>
-                <img src="../images/imagen__incompleta.jpg" alt=""> <!-- Imagen de tapizados -->
+            <article class="container__telas telas-2">
+                <div class="telas">
+                    <h2>Lino</h2>
+                    <img src="../images/muebles/lino.jpg" alt="">
+                </div>
             </article>
-            <article class="container__text__telas">
-                <p class="fuente1">Tapizados grupo 2</p>
-                <img src="../images/imagen__incompleta.jpg" alt=""> <!-- Imagen de tapizados -->
+
+            <article class="container__telas telas-3">
+                <div class="telas">
+                    <h2>Pana</h2>
+                    <img src="../images/muebles/pana.jpg" alt="">
+                </div>
             </article>
-            <article class="container__text__telas container__text__telas--button">
+
+            <article class="catalogo">
                 <p class="fuente1">Podes descargar nuestro catalogo aqui!</p>
                 <button>Descargar Catalogo</button>
             </article>
         </section>
 
         <!-- Contenedor con muebles -->
-        
-        <section class="muebles__box container__muebles1">
-            <article class="muebles__card">
-                <img src="../images/imagen__incompleta.jpg" alt="">                         <!-- Mueble -->
-                <h2 class="fuente1">Nombre del mueble</h2>  <!-- Definir muebles -->
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>                                   <!-- Descripcion -->
-                <p class="fuente1">Medidas</p>                                     <!-- Medidas -->
+        <section class="muebles__box">
+            <article class="muebles__container__card card-1">
+                <div class="card" style="width: 18rem;">
+                    <div id="carousel__1" class="carousel carousel-fade" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/muebles/paris_1.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/paris_2.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/paris_3.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel__1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel__1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>   
+                    <div class="card-body">                      
+                        <h2 class="card-title fuente1">Sofa Paris</h2> 
+                        <h3 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>  
+                    </div>
+                    <div class="info">
+                        <div class="medida">160x90</div>
+                        <div class="peso">80KG</div>
+                    </div>
+                </div>
             </article>
-        </section>
 
-        <section class="muebles__box container__muebles2">
-            <article class="muebles__card">
-                <img src="../images/imagen__incompleta.jpg" alt="">                         <!-- Mueble -->
-                <h2 class="fuente1">Nombre del mueble</h2>  <!-- Definir muebles -->
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>                                   <!-- Descripcion -->
-                <p class="fuente1">Medidas</p>                                     <!-- Medidas -->
+            <article class="muebles__container__card card-2">
+                <div class="card" style="width: 18rem;">
+                    <div id="carousel__2" class="carousel carousel-fade" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/muebles/london_1.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/london_2.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/london_3.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel__2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel__2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>   
+                    <div class="card-body">                      
+                        <h2 class="card-title fuente1">Sofa London</h2> 
+                        <h3 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>  
+                    </div>
+                    <div class="info">
+                        <div class="medida">160x90</div>
+                        <div class="peso">80KG</div>
+                    </div>
+                </div>
             </article>
-        </section>
 
-        <section class="muebles__box container__muebles3">
-            <article class="muebles__card">
-                <img src="../images/imagen__incompleta.jpg" alt="">                         <!-- Mueble -->
-                <h2 class="fuente1">Nombre del mueble</h2>  <!-- Definir muebles -->
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>                                   <!-- Descripcion -->
-                <p class="fuente1">Medidas</p>                                     <!-- Medidas -->
+            <article class="muebles__container__card card-3">
+                <div class="card" style="width: 18rem;">
+                    <div id="carousel__3" class="carousel carousel-fade" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/muebles/rio_1.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/rio_2.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel__3" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel__3" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>   
+                    <div class="card-body">                      
+                        <h2 class="card-title fuente1">Sofa Río</h2> 
+                        <h3 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>  
+                    </div>
+                    <div class="info">
+                        <div class="medida">160x90</div>
+                        <div class="peso">80KG</div>
+                    </div>
+                </div>
             </article>
-        </section>
 
-        <section class="muebles__box container__muebles4">
-            <article class="muebles__card">
-                <img src="../images/imagen__incompleta.jpg" alt="">                         <!-- Mueble -->
-                <h2 class="fuente1">Nombre del mueble</h2>  <!-- Definir muebles -->
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>                                   <!-- Descripcion -->
-                <p class="fuente1">Medidas</p>                                     <!-- Medidas -->
+            <article class="muebles__container__card card-4">
+                <div class="card" style="width: 18rem;">
+                    <div id="carousel__4" class="carousel carousel-fade" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/muebles/rinconero_roma_1.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/rinconero_roma_2.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/rinconero_roma_3.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel__4" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel__4" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>   
+                    <div class="card-body">                      
+                        <h2 class="card-title fuente1">Rinconero Roma</h2> 
+                        <h3 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>  
+                    </div>
+                    <div class="info">
+                        <div class="medida">160x90</div>
+                        <div class="peso">80KG</div>
+                    </div>
+                </div>                                     <!-- Medidas -->
             </article>
-        </section>
 
-        <section class="muebles__box container__muebles5">
-            <article class="muebles__card">
-                <img src="../images/imagen__incompleta.jpg" alt="">                         <!-- Mueble -->
-                <h2 class="fuente1">Nombre del mueble</h2>  <!-- Definir muebles -->
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>                                   <!-- Descripcion -->
-                <p class="fuente1">Medidas</p>                                     <!-- Medidas -->
+            <article class="muebles__container__card card-5">
+                <div class="card" style="width: 18rem;">
+                    <div id="carousel__5" class="carousel carousel-fade" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/muebles/rinconero_tokio_1.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/rinconero_tokio_2.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/rinconero_tokio_3.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel__5" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel__5" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>   
+                    <div class="card-body">                      
+                        <h2 class="card-title fuente1">Rinconero Tokio</h2> 
+                        <h3 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>  
+                    </div>
+                    <div class="info">
+                        <div class="medida">160x90</div>
+                        <div class="peso">80KG</div>
+                    </div>
+                </div>
+                </div>  
+                                                   <!-- Medidas -->
             </article>
-        </section>
 
-        <section class="muebles__box container__muebles6">
-            <article class="muebles__card">
-                <img src="../images/imagen__incompleta.jpg" alt="">                         <!-- Mueble -->
-                <h2 class="fuente1">Nombre del mueble</h2>  <!-- Definir muebles -->
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>                                   <!-- Descripcion -->
-                <p class="fuente1">Medidas</p>                                     <!-- Medidas -->
+            <article class="muebles__container__card card-6">
+                <div class="card" style="width: 18rem;">
+                    <div id="carousel__6" class="carousel carousel-fade" data-bs-touch="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/muebles/candelaria_1.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/muebles/candelaria_2.jpg" class="d-block w-100 card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel__6" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel__6" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>   
+                    <div class="card-body">                      
+                        <h2 class="card-title fuente1">Candelaria</h2> 
+                        <h3 class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quo amet quod veritatis commodi asperiores</h3>  
+                    </div>
+                    <div class="info">
+                        <div class="medida">160x90</div>
+                        <div class="peso">80KG</div>
+                    </div>
+                </div>                                     <!-- Medidas -->
             </article>
         </section>
     </main>

@@ -86,11 +86,15 @@ nav {
 
 @media screen and (max-width: 991px) {
 
+    header {
+        z-index: 1000;
+    }
+
     .navbar {
         padding: 0 0 0 0;
     } 
 
-    .nav__logo__container{
+    .nav__logo__container {
         height: 80px; width: 180px;
         background: none;
     }
@@ -105,7 +109,6 @@ nav {
 
     .nav__list__container {
         background-color: #0e9e2c;
-
     }
 
     .nav__list__container ul {
@@ -138,7 +141,7 @@ nav {
 }
 
 .filtro {
-    background-color: rgba(14, 158, 44, 0.4);
+    background-color: rgba(225, 255, 190, 0.2);
     padding: 0;
 }
 
@@ -313,6 +316,8 @@ nav {
 }
 
 .main__button {
+    padding: 0%;
+    display: flex;
     height: 100%; width: 100%;
     border-radius: 10px;
     border: none;
@@ -324,12 +329,32 @@ nav {
 
 .main__button:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    
 }
 
-.empresa__box button span{
+.titulo {
     text-transform: uppercase;
     font-size: 22px;
+    height: 100%; width: 100%;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+.titulo:hover {
+    transform: translateY(-3%);
+    text-decoration: underline;
+}
+
+.titulo--menos__padding {
+    text-transform: uppercase;
+    font-size: 22px;
+    height: 100%; width: 100%;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+.titulo--menos__padding:hover {
+    transform: translateY(-3%);
+    text-decoration: underline;
 }
 
 .modal-header h1 {
@@ -386,9 +411,7 @@ nav {
     background-position: center;
 }
 
-
-
-@media screen and (max-width:992px) {
+@media screen and (max-width:991px) {
 
     .empresa {
         grid-template-columns: repeat(2, 1fr);
@@ -423,172 +446,283 @@ nav {
         margin: 20px 0;
     }
 
-    .empresa__box button span{
-        text-transform: uppercase;
+    .titulo {
         font-size: 18px;
+        padding-top: 40px;
+    }
+    
+    .titulo--menos__padding {
+        font-size: 18px;
+        padding-top: 25px;
     }
 }
 
 /* ---------------Main muebles--------------- */
 /* Contenedor con texto */
 
-.container__text__box {
-    height: 100%;
-}
-
 .muebles__container__text {
-    grid-area: telas;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas:
+    "telas-1 telas-2 telas-3"
+    "catalogo catalogo catalogo";
+    padding-top: 100px;
     background-color: #0b0b0b;
 }
 
-.container__text__telas {
-    width: 25%;
+.telas-1 {
+    grid-area: telas-1;
+}
+
+.telas-2 {
+    grid-area: telas-2;
+}
+
+.telas-3 {
+    grid-area: telas-3;
+}
+
+.container__telas {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.container__text__telas p {
-    padding: 20px 0;
-    font-size: 18px;
+.telas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.telas h2 {
     text-transform: uppercase;
     color: #e9c46a;
 }
 
-.container__text__telas img {
-    height: 80%; width: 150px;
+.container__telas img {
+    height: 300px; width: 200px;
 }
 
-.container__text__telas--button {
-    justify-content: center;
-}
-
-.container__text__telas--button p {
-    font-size: 16px;
-    text-transform: none;
-    text-align: center;
-}
-
-.container__text__telas--button button {
-    height: 50px; width: 150px;
-}
-
-
-/* Contenedor con muebles */
-
-.main__muebles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.8fr repeat(2, 1fr);
-    grid-template-areas:
-    "telas telas telas"
-    "parte2 parte3 parte4"
-    "parte5 parte6 parte7";
-}
-
-.container__muebles1 {
-    grid-area: parte2;
-}
-
-.container__muebles2 {
-    grid-area: parte3;
-}
-
-.container__muebles3 {
-    grid-area: parte4;
-}
-
-.container__muebles4 {
-    grid-area: parte5;
-}
-
-.container__muebles5 {
-    grid-area: parte6;
-}
-
-.container__muebles6 {
-    grid-area: parte7;
-}
-
-.muebles__box {
+.catalogo {
     display: flex;
+    grid-area: catalogo;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    margin: 50px 0;
-}
-
-.muebles__card {
-    display: flex;
     flex-direction: column;
-    height: 400px; width: 300px;
-    border: 1px solid #0b0b0b;
-    align-items: center;
-    justify-content: space-between;
+    padding: 50px 0;
 }
 
-.muebles__card img {
-    height: 200px; width: 100%;
-}
-
-.muebles__card h2 {
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.muebles__card h3 {
-    font-weight: 400;
+.catalogo p {
+    color: #e9c46a;
+    font-size: 20px;
     text-align: center;
 }
 
-.muebles__card p {
+.catalogo button {
+    height: 50px; width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    background-color: #0b0b0b;
+    transition: 0.4s;
+    border-color: #FFFFFF;
 }
 
-@media screen and (max-width: 1000px) {
+.catalogo button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 
-    .main__muebles {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 0.4fr) repeat(3, 1fr);
-        grid-template-areas:
-        "telas telas"
-        "telas telas"
-        "parte2 parte3"
-        "parte4 parte5"
-        "parte6 parte7";
+@media screen and (max-width: 991px) {
+    .muebles__container__text {
+        padding-top: 50px;
     }
 }
 
 @media screen and (max-width: 704px) {
-    
-    .main__muebles {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.5fr repeat(6, 1fr);
-        grid-template-areas:
-        "telas"
-        "parte2" 
-        "parte3"
-        "parte4" 
-        "parte5"
-        "parte6" 
-        "parte7";
-    }
 
     .muebles__container__text {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "telas-1 telas-2"
+        "telas-3 catalogo";
+        padding-top: 0px;
     }
 
-    .container__text__telas p {
-        font-size: 16px;
+    .container__telas img {
+        height: 200px; width: 150px;
     }
 
-    .container__text__telas--button p {
-        font-size: 14px;
+    .telas-3 {
+        padding: 20px 0 50px 0;
     }
 
+    .catalogo {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .muebles__container__text {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr) 0.5fr;
+        grid-template-areas:
+        "telas-1"
+        "telas-2"
+        "telas-3"
+        "catalogo";
+        padding-top: 0px;
+    }
+
+    .container__telas img {
+        height: 200px; width: 150px;
+    }
+
+    .telas-3 {
+        padding: 20px 0 50px 0;
+    }
+
+    .catalogo {
+        padding: 0 20px 20px 20px;
+    }
+}
+
+/* Contenedor con muebles */
+
+
+.muebles__box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr) ;
+    grid-template-areas:
+    "card-1 card-2 card-3"
+    "card-4 card-5 card-6";
+}
+
+.card-1 {
+    grid-area: card-1;
+}
+
+.card-2 {
+    grid-area: card-2;
+}
+
+.card-3 {
+    grid-area: card-3;
+}
+
+.card-4 {
+    grid-area: card-4;
+}
+
+.card-5 {
+    grid-area: card-5;
+}
+
+.card-6 {
+    grid-area: card-6;
+}
+
+.muebles__container__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 300px;
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin: 50px 0;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-3%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-position: center;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: 35px; width: 35px;
+    background-color: black;
+    border-radius: 50%;
+    top: calc(50% - 10px);
+}
+
+.carousel-control-prev {
+    left: 2%;
+}
+
+.carousel-control-next {
+    right: 2%;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+.card h3 {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #e9c46a;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 991px) {
+
+    .muebles__box {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr) ;
+        grid-template-areas:
+        "card-1 card-2"
+        "card-3 card-4"
+        "card-5 card-6";
+    }
+}
+
+@media screen and (max-width: 704px) {
+
+    .muebles__box {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr) ;
+        grid-template-areas:
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5" 
+        "card-6";
+    }
+
+    .card {
+        margin: 30px 0;
+    }
 }
 
 /* ---------------Footer--------------- */
