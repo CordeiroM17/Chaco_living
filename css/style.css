@@ -279,6 +279,10 @@ nav {
     .sin__borde {
         border-bottom: none;
     }
+
+    .box__container__text button:hover {
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -315,9 +319,10 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.9);
 }
 
-.main__button {
+.empresa__button {
     padding: 0%;
     display: flex;
     height: 100%; width: 100%;
@@ -329,7 +334,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.main__button:hover {
+.empresa__button:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -426,6 +431,16 @@ nav {
 
     .empresa__box {
         margin: 30px 0;
+    }
+
+    .titulo:hover {
+        transform: translateY(0);
+        text-decoration: none;
+    }
+    
+    .titulo--menos__padding:hover {
+        transform: translateY(0);
+        text-decoration: none;
     }
 }
 
@@ -542,6 +557,10 @@ nav {
 @media screen and (max-width: 991px) {
     .muebles__container__text {
         padding-top: 50px;
+    }
+
+    .catalogo button:hover {
+        cursor: pointer;
     }
 }
 
@@ -705,6 +724,11 @@ nav {
         "card-3 card-4"
         "card-5 card-6";
     }
+
+    .card:hover {
+        transform: translateY(0);
+        box-shadow: 0;
+    }
 }
 
 @media screen and (max-width: 704px) {
@@ -724,6 +748,73 @@ nav {
     .card {
         margin: 30px 0;
     }
+}
+
+/* Ajustando imagenes */
+
+.carousel-inner {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+    
+.sofa-london-2 {
+    position: relative;
+    left: 25px;
+    top: 10px;
+}
+
+.sofa-london-3 {
+    position: relative;
+    left: 25px;
+    top: 8px;
+}
+
+.sofa-rio {
+    position: relative;
+    top: 10px;
+}
+
+.rinco-roma-1 {
+    position: relative;
+    bottom: 20px;
+}
+
+.rinco-roma-3 {
+    position: relative;
+    left: 6px;
+}
+
+.cande-1 {
+    position: relative;
+    right: 4px;
+}
+
+.cande-2 {
+    position: relative;
+    left: 8px;
+    bottom: 15px;
+}
+
+/* ---------------Main consultas--------------- */
+
+.main__consultas {
+    background-color: #0b0b0b;
+}
+
+.consultas__box {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+}
+
+.accordion {
+    width: 100%;
+    margin: 0 10% 0 10%;
+    align-items: center;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
 }
 
 /* ---------------Main contacto--------------- */

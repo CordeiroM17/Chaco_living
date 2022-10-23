@@ -15,11 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>    
+<body class="container-fluid">    
     
     <!-- Barra de navegacion -->
 
-    <header>
+    <header class="row">
         <nav class="navbar navbar-expand-lg">
             <div class="nav_container container-fluid">
                 <div class="nav__logo__container">
@@ -36,7 +36,7 @@
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="empresa.html">Empresa</a>
+                            <a class="nav-link"  href="empresa.html">Empresa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="muebles.html">Muebles</a>
@@ -51,62 +51,74 @@
                 </div>
             </div>
         </nav>
-    </header>    
+    </header>
     
-    <main class="main__consultas">
-
-        <!-- Contenedor con texto -->
-
-        <section class="container__text">
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste voluptate, neque quae expedita molestias tempore eaque consequuntur dignissimos, illum amet eum aliquid autem rerum dolore quasi ut saepe aperiam voluptas!</p>
-                <button>Contacto</button>
-            </article>
-        </section>
+    <main class="row main__consultas">
 
         <!-- Contenedor de consultas -->
 
-        <section>
-            <article>
-                <h1></h1>
-            </article>
-            <article>
-                <div>
-                    <h2>¿Como puedo comprar un mueble?</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea aliquid tempore, necessitatibus in reiciendis asperiores laborum magnam quaerat quos doloremque voluptatem illo aut natus blanditiis, eligendi quae voluptatibus obcaecati laboriosam.</p>
+        <section class="consultas__box">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿Cómo puedo comprar un mueble?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
                 </div>
-            </article>
-            <article>
-                <div>
-                    <h2>¿En cuanto tiempo deberia llegar mi pedido?</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea aliquid tempore, necessitatibus in reiciendis asperiores laborum magnam quaerat quos doloremque voluptatem illo aut natus blanditiis, eligendi quae voluptatibus obcaecati laboriosam.</p>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿En cuánto tiempo debería llegar mi pedido?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
                 </div>
-            </article>
-            <article>
-                <div>
-                    <h2>¿Que hago si mi pedido no llega?</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea aliquid tempore, necessitatibus in reiciendis asperiores laborum magnam quaerat quos doloremque voluptatem illo aut natus blanditiis, eligendi quae voluptatibus obcaecati laboriosam.</p>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ¿Qué hago si mi pedido no llega?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
                 </div>
-            </article>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Mi pregunta no aparece aqui
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstratddddddde the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     
     <!-- Footer -->
 
-    <footer>
-        <div class="footer__container__images">
+    <footer class="row">
+        <div class="col-12 footer__container__images">
             <a href="#">                <!-- Agregar links -->
-                <img src="../images/instagram__logo.png" alt="Instagram">
+                <img src="../images/Instagram.png" alt="Instagram">
             </a>
             <a href="#">                <!-- Agregar links -->
-                <img src="../images/facebook__logo.png" alt="Facebook">
+                <img src="../images/facebook.png" alt="Facebook">
             </a>
             <a href="#">                <!-- Agregar links -->
-                <img src="../images/whatsapp__logo.png" alt="Gmail">
+                <img src="../images/whatsapp.png" alt="whatsapp">
             </a>
-            <h3 class="footer__text fuente1">Contactenos por nuestras distintas redes sociales</h3>
-            <p class="footer__text">® 2022 Chaco Living</p>                     <!-- Copyright -->
         </div>
+        <h3 class="col-12 fuente1">Contactenos por nuestras distintas redes sociales</h3>
+        <p class="col-12 fuente1">® 2022 Chaco Living</p>                     <!-- Copyright -->
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
