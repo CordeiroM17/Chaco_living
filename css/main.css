@@ -1,0 +1,705 @@
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  * h1 {
+    font-family: 'Segoe UI'; }
+  * h2 {
+    font-family: 'Segoe UI'; }
+  * h3 {
+    font-family: 'Roboto', sans-serif; }
+  * p {
+    font-family: 'Roboto', sans-serif; }
+  * a {
+    text-decoration: none; }
+  * button {
+    font-family: 'Roboto', sans-serif; }
+
+/* Check */
+/* ---------------Header--------------- */
+/* ---------------Navbar--------------- */
+header {
+  height: 80px;
+  background-color: #0e9e2c; }
+  header nav {
+    height: 100%; }
+    header nav .nav_container {
+      justify-content: space-between;
+      align-items: center; }
+      header nav .nav_container .nav__logo__container {
+        display: flex;
+        margin-left: 10%;
+        height: 220px;
+        width: 200px;
+        background-color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 40%;
+        border-bottom-right-radius: 40%; }
+        header nav .nav_container .nav__logo__container a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          border-bottom-left-radius: 40%;
+          border-bottom-right-radius: 40%; }
+          header nav .nav_container .nav__logo__container a img {
+            z-index: 10;
+            margin-top: 40px;
+            height: 80px;
+            width: 180px; }
+    header nav .nav__list__container {
+      justify-content: end;
+      position: relative;
+      z-index: 100; }
+      header nav .nav__list__container ul {
+        margin: 0 0 0 0;
+        justify-content: center;
+        align-items: center; }
+        header nav .nav__list__container ul li {
+          padding: 20px;
+          text-transform: uppercase; }
+          header nav .nav__list__container ul li a {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: 'Segoe UI'; }
+            header nav .nav__list__container ul li a:hover {
+              color: black; }
+
+@media screen and (max-width: 991px) {
+  header {
+    z-index: 100; }
+    header .navbar {
+      padding: 0 0 0 0; }
+      header .navbar .nav_container {
+        width: 100%; }
+        header .navbar .nav_container .nav__logo__container {
+          height: 80px;
+          width: 180px;
+          background: none;
+          margin-left: 6%; }
+          header .navbar .nav_container .nav__logo__container .logo {
+            margin: 0%; }
+    header .navbar_btn {
+      margin-right: 6%; }
+    header .nav__list__container {
+      background-color: #0e9e2c; }
+      header .nav__list__container ul {
+        padding-right: 0; }
+        header .nav__list__container ul li {
+          padding: 10px; } }
+
+@media screen and (max-width: 576px) {
+  .nav__logo__container {
+    margin-left: 2% !important; }
+  .navbar_btn {
+    margin-right: 2% !important; } }
+
+/* Check */
+/* ---------------Main Index--------------- */
+.main__principal {
+  background-image: url(../images/fondo__index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .main__principal .filtro {
+    background-color: rgba(225, 255, 190, 0.2);
+    padding: 0; }
+    .main__principal .filtro .main__container__text {
+      padding: 100px 0 0 10%;
+      margin: 0;
+      width: 90%; }
+      .main__principal .filtro .main__container__text h1 {
+        text-transform: uppercase;
+        font-size: 60px;
+        margin-bottom: 0;
+        height: 80px;
+        color: black; }
+      .main__principal .filtro .main__container__text h2 {
+        font-size: 26px;
+        margin-bottom: 0;
+        color: black; }
+      .main__principal .filtro .main__container__text p {
+        padding-top: 10px;
+        margin-bottom: 0%;
+        color: black; }
+    .main__principal .filtro .main__box__container {
+      margin: 100px 0; }
+      .main__principal .filtro .main__box__container .box__container {
+        height: 100px;
+        width: 80%;
+        margin: 0 10%;
+        background-color: #FFFFFF;
+        border-radius: 20px 40px;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.9); }
+        .main__principal .filtro .main__box__container .box__container .box__container__text {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .main__principal .filtro .main__box__container .box__container .box__container__text p {
+            font-size: 14px;
+            text-align: center;
+            padding: 0 30px;
+            margin: 0%;
+            color: black; }
+          .main__principal .filtro .main__box__container .box__container .box__container__text button {
+            height: 40px;
+            width: 120px;
+            font-weight: 500;
+            color: white;
+            text-transform: uppercase;
+            background-color: black;
+            transition: 0.4s; }
+            .main__principal .filtro .main__box__container .box__container .box__container__text button:hover {
+              background-color: white;
+              color: black;
+              cursor: pointer; }
+
+@media screen and (max-width: 991px) {
+  .main__container__text {
+    text-align: center;
+    padding-top: 50px; }
+  .main__box__container {
+    margin: 50px 0 0 0 !important; }
+    .main__box__container .box__container {
+      height: 100% !important;
+      width: 100% !important;
+      margin: 0 !important;
+      background-color: #FFFFFF;
+      border-radius: 0 !important;
+      justify-content: center;
+      box-shadow: 0 0 0 0 !important; }
+      .main__box__container .box__container .box__container__text {
+        padding: 20px 0;
+        border-bottom: 1px solid black; }
+      .main__box__container .box__container .sin__borde {
+        border-bottom: none; }
+        .main__box__container .box__container .sin__borde:hover {
+          cursor: pointer; } }
+
+@media screen and (max-width: 576px) {
+  .main__container__text h1 {
+    font-size: 45px !important;
+    height: 60px !important; }
+  .main__container__text h2 {
+    font-size: 20px !important; }
+  .main__container__text p {
+    font-size: 14px !important; }
+  .box__container {
+    padding: 0 10% !important; } }
+
+@media screen and (max-width: 425px) {
+  .main__container__text h1 {
+    font-size: 33px !important;
+    height: 45px !important; }
+  .main__container__text h2 {
+    font-size: 16px !important; }
+  .main__container__text p {
+    font-size: 12px !important; } }
+
+/* Check */
+/* ---------------Main empresa--------------- */
+.main__empresa {
+  background-image: url(../images/fondo__empresa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .main__empresa .filtro {
+    background-color: rgba(225, 255, 190, 0.2); }
+  .main__empresa .empresa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "parte_1 parte_2 parte_3" "parte_4 parte_5 parte_6";
+    justify-items: center; }
+    .main__empresa .empresa .empresa__box {
+      display: flex;
+      height: 150px;
+      width: 300px;
+      margin: 100px 0;
+      padding: 0%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.9); }
+      .main__empresa .empresa .empresa__box .empresa__button {
+        padding: 0%;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        background: none;
+        color: white;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.5); }
+        .main__empresa .empresa .empresa__box .empresa__button:hover {
+          background-color: rgba(0, 0, 0, 0.5); }
+        .main__empresa .empresa .empresa__box .empresa__button .titulo {
+          text-transform: uppercase;
+          font-size: 22px;
+          height: 100%;
+          width: 100%;
+          padding-top: 60px;
+          transition: 0.3s; }
+          .main__empresa .empresa .empresa__box .empresa__button .titulo:hover {
+            transform: translateY(-3%);
+            text-decoration: underline; }
+        .main__empresa .empresa .empresa__box .empresa__button .titulo--menos__padding {
+          text-transform: uppercase;
+          font-size: 22px;
+          height: 100%;
+          width: 100%;
+          padding-top: 50px;
+          transition: 0.3s; }
+          .main__empresa .empresa .empresa__box .empresa__button .titulo--menos__padding:hover {
+            transform: translateY(-3%);
+            text-decoration: underline; }
+      .main__empresa .empresa .empresa__box .modal-header h1 {
+        text-transform: uppercase; }
+        .main__empresa .empresa .empresa__box .modal-header h1 img {
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding-bottom: 10px; }
+      .main__empresa .empresa .empresa__box .modal-body img {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 10px; }
+    .main__empresa .empresa .container1 {
+      grid-area: parte_1;
+      background-image: url(../images/empresa/nuestra_historia.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main__empresa .empresa .container2 {
+      grid-area: parte_2;
+      background-image: url(../images/empresa/fabricacion.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main__empresa .empresa .container3 {
+      grid-area: parte_3;
+      background-image: url(../images/empresa/embalaje.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main__empresa .empresa .container4 {
+      grid-area: parte_4;
+      background-image: url(../images/empresa/fsc.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main__empresa .empresa .container5 {
+      grid-area: parte_5;
+      background-image: url(../images/empresa/logistica.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .main__empresa .empresa .container6 {
+      grid-area: parte_6;
+      background-image: url(../images/empresa/rsc.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+
+@media screen and (max-width: 991px) {
+  .empresa {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+    grid-template-areas: "parte_1 parte_2" "parte_3 parte_4" "parte_5 parte_6" !important; }
+    .empresa .empresa__box {
+      margin: 30px 0 !important; }
+      .empresa .empresa__box .titulo:hover {
+        transform: translateY(0) !important;
+        text-decoration: none !important; }
+      .empresa .empresa__box .titulo--menos__padding:hover {
+        transform: translateY(0) !important;
+        text-decoration: none !important; } }
+
+@media screen and (max-width: 704px) {
+  .empresa {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(6, 1fr) !important;
+    grid-template-areas: "parte_1" "parte_2" "parte_3" "parte_4" "parte_5" "parte_6" !important; }
+    .empresa .empresa__box {
+      height: 100px;
+      width: 250px !important;
+      margin: 20px 0 !important; }
+      .empresa .empresa__box .titulo {
+        font-size: 18px !important;
+        padding-top: 65px !important; }
+      .empresa .empresa__box .titulo--menos__padding {
+        font-size: 18px !important;
+        padding-top: 55px !important; } }
+
+/* Check */
+/* ---------------Main muebles--------------- */
+.main__muebles {
+  /* Contenedor con texto muebles */
+  /* Contenedor con muebles */ }
+  .main__muebles .muebles__container__text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: "telas-1 telas-2 telas-3" "catalogo catalogo catalogo";
+    padding-top: 100px;
+    background-color: #0b0b0b; }
+    .main__muebles .muebles__container__text .telas-1 {
+      grid-area: telas-1; }
+    .main__muebles .muebles__container__text .telas-2 {
+      grid-area: telas-2; }
+    .main__muebles .muebles__container__text .telas-3 {
+      grid-area: telas-3; }
+    .main__muebles .muebles__container__text .container__telas {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .main__muebles .muebles__container__text .container__telas .telas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .main__muebles .muebles__container__text .container__telas .telas h2 {
+          text-transform: uppercase;
+          color: #e9c46a; }
+        .main__muebles .muebles__container__text .container__telas .telas img {
+          height: 300px;
+          width: 200px; }
+    .main__muebles .muebles__container__text .catalogo {
+      display: flex;
+      grid-area: catalogo;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 0; }
+      .main__muebles .muebles__container__text .catalogo h2 {
+        color: #e9c46a;
+        font-size: 20px;
+        text-align: center; }
+      .main__muebles .muebles__container__text .catalogo button {
+        height: 50px;
+        width: 200px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: white;
+        text-transform: uppercase;
+        background-color: #0b0b0b;
+        transition: 0.4s;
+        border-color: #FFFFFF; }
+        .main__muebles .muebles__container__text .catalogo button:hover {
+          background-color: white;
+          color: black;
+          cursor: pointer; }
+  .main__muebles .muebles__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "card-1 card-2 card-3" "card-4 card-5 card-6"; }
+    .main__muebles .muebles__box .card-1 {
+      grid-area: card-1; }
+    .main__muebles .muebles__box .card-2 {
+      grid-area: card-2; }
+    .main__muebles .muebles__box .card-3 {
+      grid-area: card-3; }
+    .main__muebles .muebles__box .card-4 {
+      grid-area: card-4; }
+    .main__muebles .muebles__box .card-5 {
+      grid-area: card-5; }
+    .main__muebles .muebles__box .card-6 {
+      grid-area: card-6; }
+    .main__muebles .muebles__box .muebles__container__card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .main__muebles .muebles__box .muebles__container__card .card {
+        width: 300px;
+        border-radius: 18px;
+        background-color: #FFFFFF;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        margin: 50px 0;
+        transition: 0.5s ease;
+        cursor: pointer; }
+        .main__muebles .muebles__box .muebles__container__card .card:hover {
+          transform: translateY(-3%);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); }
+        .main__muebles .muebles__box .muebles__container__card .card .carousel {
+          /* Ajustando imagenes */ }
+          .main__muebles .muebles__box .muebles__container__card .card .carousel img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-position: center; }
+          .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-control-prev, .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-control-next {
+            height: 35px;
+            width: 35px;
+            background-color: black;
+            border-radius: 50%;
+            top: calc(50% - 10px); }
+          .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-control-prev {
+            left: 2%; }
+          .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-control-next {
+            right: 2%; }
+          .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-inner {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px; }
+            .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-inner .carousel-item .sofa-london-2 {
+              position: relative;
+              left: 25px;
+              top: 10px; }
+            .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-inner .carousel-item .sofa-london-3 {
+              position: relative;
+              left: 25px;
+              top: 8px; }
+            .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-inner .carousel-item .sofa-rio {
+              position: relative;
+              top: 10px; }
+            .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-inner .carousel-item .rinco-roma-1 {
+              position: relative;
+              bottom: 20px; }
+            .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-inner .carousel-item .rinco-roma-3 {
+              position: relative;
+              left: 6px; }
+            .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-inner .carousel-item .cande-1 {
+              position: relative;
+              right: 4px; }
+            .main__muebles .muebles__box .muebles__container__card .card .carousel .carousel-inner .carousel-item .cande-2 {
+              position: relative;
+              left: 8px;
+              bottom: 15px; }
+        .main__muebles .muebles__box .muebles__container__card .card .card-body h2 {
+          margin-top: 0;
+          font-size: 28px;
+          padding: 10px 0; }
+        .main__muebles .muebles__box .muebles__container__card .card .card-body h3 {
+          font-size: 15px;
+          padding-bottom: 10px; }
+        .main__muebles .muebles__box .muebles__container__card .card .info {
+          display: flex;
+          justify-content: space-evenly;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          background-color: #e9c46a;
+          font-weight: bold;
+          padding: 10px 0; }
+          .main__muebles .muebles__box .muebles__container__card .card .info .medida {
+            font-family: 'Roboto', sans-serif; }
+          .main__muebles .muebles__box .muebles__container__card .card .info .peso {
+            font-family: 'Roboto', sans-serif; }
+
+@media screen and (max-width: 991px) {
+  .muebles__container__text {
+    padding-top: 50px !important; }
+    .muebles__container__text:hover {
+      cursor: pointer !important; }
+  .muebles__box {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+    grid-template-areas: "card-1 card-2" "card-3 card-4" "card-5 card-6" !important; }
+    .muebles__box:hover {
+      transform: translateY(0) !important;
+      box-shadow: 0 !important; } }
+
+@media screen and (max-width: 704px) {
+  .muebles__container__text {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    grid-template-areas: "telas-1 telas-2" "telas-3 catalogo" !important;
+    padding-top: 0px !important; }
+    .muebles__container__text .container__telas img {
+      height: 200px !important;
+      width: 150px !important; }
+    .muebles__container__text .telas-3 {
+      padding: 20px 0 50px 0 !important; }
+    .muebles__container__text .catalogo {
+      padding-right: 20px !important; }
+  .muebles__box {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(6, 1fr) !important;
+    grid-template-areas: "card-1" "card-2" "card-3" "card-4" "card-5"  "card-6" !important; }
+    .muebles__box .card {
+      margin: 30px 0 !important; } }
+
+@media screen and (max-width: 425px) {
+  .muebles__container__text {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(3, 1fr) 0.5fr !important;
+    grid-template-areas: "telas-1" "telas-2" "telas-3" "catalogo" !important;
+    padding-top: 0px; }
+    .muebles__container__text .container__telas img {
+      height: 200px !important;
+      width: 150px !important; }
+    .muebles__container__text .telas-3 {
+      padding: 20px 0 50px 0 !important; }
+    .muebles__container__text .catalogo {
+      padding: 0 20px 20px 20px !important; } }
+
+/* Check */
+/* ---------------Main contacto--------------- */
+.main__contacto {
+  /* Pad con informacion */
+  /* Formulario */ }
+  .main__contacto .contacto__container__text {
+    width: 35%;
+    padding: 0;
+    background-color: #0e9e2c; }
+    .main__contacto .contacto__container__text .container__text__box {
+      padding: 100px 10% 100px 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main__contacto .contacto__container__text .container__text__box h1 {
+        font-size: 30px;
+        color: #FFFFFF;
+        text-transform: uppercase; }
+      .main__contacto .contacto__container__text .container__text__box h2 {
+        padding-top: 10px;
+        font-size: 20px; }
+      .main__contacto .contacto__container__text .container__text__box .simple__box {
+        width: 100%;
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        margin-top: 30px; }
+        .main__contacto .contacto__container__text .container__text__box .simple__box h3 {
+          font-size: 16px;
+          padding: 10px;
+          margin: 0; }
+  .main__contacto .contacto__container__form {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main__contacto .contacto__container__form .form__container {
+      width: 70%; }
+      .main__contacto .contacto__container__form .form__container form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 0.1fr);
+        grid-template-areas: "name surname" "email email" "message message" "button button"; }
+        .main__contacto .contacto__container__form .form__container form .form__group__name {
+          display: flex;
+          flex-direction: column;
+          grid-area: name; }
+          .main__contacto .contacto__container__form .form__container form .form__group__name input {
+            width: 90%; }
+        .main__contacto .contacto__container__form .form__container form .form__group__surname {
+          display: flex;
+          flex-direction: column;
+          grid-area: surname; }
+          .main__contacto .contacto__container__form .form__container form .form__group__surname input {
+            width: 100%; }
+        .main__contacto .contacto__container__form .form__container form .form__group__email {
+          display: flex;
+          flex-direction: column;
+          grid-area: email; }
+          .main__contacto .contacto__container__form .form__container form .form__group__email input {
+            width: 100%; }
+        .main__contacto .contacto__container__form .form__container form .form__group__message {
+          display: flex;
+          flex-direction: column;
+          grid-area: message; }
+          .main__contacto .contacto__container__form .form__container form .form__group__message textarea {
+            height: 100px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: rgba(230, 230, 230, 0.6);
+            border: 2px solid rgba(0, 0, 0, 0);
+            transition: 0.3s;
+            outline: none; }
+            .main__contacto .contacto__container__form .form__container form .form__group__message textarea:hover {
+              background-color: rgba(0, 0, 0, 0.1); }
+            .main__contacto .contacto__container__form .form__container form .form__group__message textarea:focus {
+              background-color: #FFFFFF;
+              border: 2px solid rgba(30, 85, 250, 0.47); }
+        .main__contacto .contacto__container__form .form__container form input {
+          grid-area: button;
+          font-size: 20px;
+          height: 50px;
+          background-color: #2ecc71;
+          color: #FFFFFF;
+          border-radius: 5px;
+          outline: none;
+          border: none; }
+          .main__contacto .contacto__container__form .form__container form input:hover {
+            background-color: #0e9e2c; }
+        .main__contacto .contacto__container__form .form__container form .form__group {
+          padding-bottom: 20px; }
+          .main__contacto .contacto__container__form .form__container form .form__group label {
+            color: black;
+            text-transform: uppercase;
+            font-size: 20px;
+            padding-bottom: 5px; }
+          .main__contacto .contacto__container__form .form__container form .form__group input {
+            border-radius: 5px;
+            background-color: rgba(230, 230, 230, 0.6);
+            border: 2px solid rgba(0, 0, 0, 0);
+            transition: 0.3s;
+            height: 40px;
+            outline: none; }
+            .main__contacto .contacto__container__form .form__container form .form__group input:hover {
+              background-color: rgba(0, 0, 0, 0.1); }
+            .main__contacto .contacto__container__form .form__container form .form__group input:focus {
+              background-color: #FFFFFF;
+              border: 2px solid rgba(30, 85, 250, 0.47); }
+
+@media screen and (max-width: 991px) {
+  .container__text__box {
+    padding: 50px 8% 50px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container__text__box h1 {
+      font-size: 26px; }
+    .container__text__box h2 {
+      font-size: 18px; }
+    .container__text__box .simple__box {
+      width: 100%;
+      background-color: white;
+      border-radius: 15px;
+      margin-top: 30px; }
+      .container__text__box .simple__box h3 {
+        font-size: 14px; }
+  .form__group label {
+    font-size: 16px; } }
+
+@media screen and (max-width: 704px) {
+  .contacto__container__text {
+    width: 100%; }
+    .contacto__container__text h1 {
+      font-size: 20px; }
+    .contacto__container__text h2 {
+      font-size: 4; }
+  .contacto__container__form {
+    width: 100%;
+    margin: 20px 0; }
+    .contacto__container__form .form__container form .form__group label {
+      font-size: 14px; }
+    .contacto__container__form .form__container form .form__group input {
+      height: 30px; }
+    .contacto__container__form .form__container form .form__group__message textarea {
+      height: 60px; }
+    .contacto__container__form .form__container form .form__button {
+      height: 40px; } }
+
+/* Check */
+/* ---------------Footer--------------- */
+footer {
+  height: 100%;
+  background-color: #0b0b0b;
+  justify-content: center;
+  text-align: center; }
+  footer .footer__container__images {
+    margin: 40px 0 15px 0; }
+    footer .footer__container__images a img {
+      height: 50px;
+      width: 50px; }
+  footer h2 {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase; }
+  footer p {
+    color: #FFFFFF;
+    font-size: 12px; }
+
+/* Check */

@@ -1,0 +1,98 @@
+/* ---------------Header--------------- */
+/* ---------------Navbar--------------- */
+header {
+    height: 80px;
+    background-color: $color-principal;
+    nav {
+        height: 100%;
+        .nav_container {
+            justify-content: space-between;
+            align-items: center;
+            .nav__logo__container {
+                display: flex;
+                margin-left: 10%;
+                height: 220px; width: 200px;
+                background-color: $color-white;
+                justify-content: center;
+                align-items: center;
+                border-bottom-left-radius: 40%;
+                border-bottom-right-radius: 40%;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%; width: 100%;
+                    border-bottom-left-radius: 40%;
+                    border-bottom-right-radius: 40%;
+                    img {
+                        z-index: 10;
+                        margin-top: 40px;
+                        height: 80px; width: 180px;
+                    }
+                }
+            }
+        }
+        .nav__list__container{
+            justify-content: end;
+            position: relative;
+            z-index: 100;
+            ul{
+                margin: 0 0 0 0;
+                justify-content: center;
+                align-items: center;
+                li {
+                    padding: 20px;
+                    text-transform: uppercase;
+                    a {
+                        color: $color-white;
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-family: 'Segoe UI';
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                }
+             }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    header {
+        z-index: 100;
+        .navbar {
+            padding: 0 0 0 0;
+            .nav_container {
+                width: 100%;
+                .nav__logo__container {
+                    height: 80px; width: 180px;
+                    background: none;
+                    margin-left: 6%;
+                    .logo {
+                        margin: 0%;
+                    }
+                }
+            }
+        }
+        .navbar_btn {
+            margin-right: 6%;
+        }
+        .nav__list__container {
+            background-color: $color-principal;
+            ul {
+                padding-right: 0;
+                li {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .nav__logo__container {
+        margin-left: 2% !important;
+    }
+    .navbar_btn {
+        margin-right: 2% !important;
+    }
+}

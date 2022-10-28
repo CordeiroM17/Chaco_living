@@ -1,0 +1,172 @@
+/* ---------------Main empresa--------------- */
+
+.main__empresa {
+    background-image: url(../images/fondo__empresa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .filtro {
+        background-color: $color-filtro;
+    }
+    .empresa {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "parte_1 parte_2 parte_3"
+        "parte_4 parte_5 parte_6";
+        justify-items: center;
+        .empresa__box {
+            display: flex;
+            height: 150px; width: 300px;
+            margin: 100px 0;
+            padding: 0%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.9);
+            .empresa__button {
+                padding: 0%;
+                display: flex;
+                height: 100%; width: 100%;
+                border-radius: 10px;
+                border: none;
+                background:none;
+                color: white;
+                text-transform: uppercase;
+                background-color: rgba(0, 0, 0, 0.5);
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+                .titulo {
+                    text-transform: uppercase;
+                    font-size: 22px;
+                    height: 100%; width: 100%;
+                    padding-top: 60px;
+                    transition: 0.3s;
+                    &:hover {
+                        transform: translateY(-3%);
+                        text-decoration: underline;
+                    }
+                }
+                .titulo--menos__padding {
+                    text-transform: uppercase;
+                    font-size: 22px;
+                    height: 100%; width: 100%;
+                    padding-top: 50px;
+                    transition: 0.3s;
+                    &:hover {
+                        transform: translateY(-3%);
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .modal-header {
+                h1 {
+                    text-transform: uppercase;
+                    img {
+                        width: 100%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            .modal-body {
+                img {
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    padding-bottom: 10px;
+                }
+            } 
+        }
+        .container1 {
+            grid-area: parte_1;
+            background-image: url(../images/empresa/nuestra_historia.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container2 {
+            grid-area: parte_2;
+            background-image: url(../images/empresa/fabricacion.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container3 {
+            grid-area: parte_3;
+            background-image: url(../images/empresa/embalaje.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container4 {
+            grid-area: parte_4;
+            background-image: url(../images/empresa/fsc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container5 {
+            grid-area: parte_5;
+            background-image: url(../images/empresa/logistica.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container6 {
+            grid-area: parte_6;
+            background-image: url(../images/empresa/rsc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+@media screen and (max-width:991px) {
+    .empresa {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+        grid-template-areas: 
+        "parte_1 parte_2"
+        "parte_3 parte_4"
+        "parte_5 parte_6" !important;
+        .empresa__box {
+            margin: 30px 0 !important;
+            .titulo {
+                &:hover {
+                    transform: translateY(0) !important;
+                    text-decoration: none !important;
+                }
+            }
+            .titulo--menos__padding {
+                &:hover {
+                    transform: translateY(0) !important;
+                    text-decoration: none !important;
+                }
+            }
+        }
+    } 
+}
+@media screen and (max-width: 704px) {
+    .empresa {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(6, 1fr) !important;
+        grid-template-areas: 
+        "parte_1"
+        "parte_2"
+        "parte_3"
+        "parte_4"
+        "parte_5"
+        "parte_6" !important;
+        .empresa__box {
+            height: 100px; width: 250px !important;
+            margin: 20px 0 !important;
+            .titulo {
+                font-size: 18px !important;
+                padding-top: 65px !important;
+            }
+            .titulo--menos__padding {
+                font-size: 18px !important;
+                padding-top: 55px !important;
+            }
+        }
+    }
+}

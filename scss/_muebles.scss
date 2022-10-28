@@ -1,0 +1,281 @@
+/* ---------------Main muebles--------------- */
+.main__muebles {
+    /* Contenedor con texto muebles */
+    .muebles__container__text {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-areas:
+        "telas-1 telas-2 telas-3"
+        "catalogo catalogo catalogo";
+        padding-top: 100px;
+        background-color: #0b0b0b;
+        .telas-1 {
+            grid-area: telas-1;
+        }
+        .telas-2 {
+            grid-area: telas-2;
+        }
+        .telas-3 {
+            grid-area: telas-3;
+        }
+        .container__telas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .telas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                    text-transform: uppercase;
+                    color: #e9c46a;
+                }
+                img {
+                    height: 300px; width: 200px;
+                }
+            }
+        }
+        .catalogo {
+            display: flex;
+            grid-area: catalogo;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px 0;
+            h2 {
+                color: #e9c46a;
+                font-size: 20px;
+                text-align: center;
+            }
+            button {
+                height: 50px; width: 200px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                color: white;
+                text-transform: uppercase;
+                background-color: #0b0b0b;
+                transition: 0.4s;
+                border-color: #FFFFFF;
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    /* Contenedor con muebles */
+    .muebles__box {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr) ;
+        grid-template-areas:
+        "card-1 card-2 card-3"
+        "card-4 card-5 card-6";
+        .card-1 {
+            grid-area: card-1;
+        }
+        .card-2 {
+            grid-area: card-2;
+        }
+        .card-3 {
+            grid-area: card-3;
+        }
+        .card-4 {
+            grid-area: card-4;
+        }
+        .card-5 {
+            grid-area: card-5;
+        }
+        .card-6 {
+            grid-area: card-6;
+        }
+        .muebles__container__card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .card {
+                width: 300px;
+                border-radius: 18px;
+                background-color: #FFFFFF;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+                text-align: center;
+                margin: 50px 0;
+                transition: 0.5s ease;
+                cursor: pointer;
+                &:hover {
+                    transform: translateY(-3%);
+                    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+                }
+                .carousel {
+                    img {
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                        background-position: center;
+                    }
+                    .carousel-control-prev, .carousel-control-next {
+                        height: 35px; width: 35px;
+                        background-color: black;
+                        border-radius: 50%;
+                        top: calc(50% - 10px);
+                    }
+                    .carousel-control-prev {
+                        left: 2%;
+                    }
+                    
+                    .carousel-control-next {
+                        right: 2%;
+                    }
+                    /* Ajustando imagenes */
+                    .carousel-inner {
+                        border-top-left-radius: 15px;
+                        border-top-right-radius: 15px;
+                        .carousel-item {
+                            .sofa-london-2 {
+                                position: relative;
+                                left: 25px;
+                                top: 10px;
+                            }
+                            .sofa-london-3 {
+                                position: relative;
+                                left: 25px;
+                                top: 8px;
+                            }
+                            .sofa-rio {
+                                position: relative;
+                                top: 10px;
+                            }
+                            .rinco-roma-1 {
+                                position: relative;
+                                bottom: 20px;
+                            }
+                            .rinco-roma-3 {
+                                position: relative;
+                                left: 6px;
+                            }
+                            .cande-1 {
+                                position: relative;
+                                right: 4px;
+                            }
+                            .cande-2 {
+                                position: relative;
+                                left: 8px;
+                                bottom: 15px;
+                            }
+                        }
+                    }
+                }
+                .card-body {
+                    h2 {
+                        margin-top: 0;
+                        font-size: 28px;
+                        padding: 10px 0;
+                    }
+                    h3 {
+                        font-size: 15px;
+                        padding-bottom: 10px;
+                    }
+                }
+                .info {
+                    display: flex;
+                    justify-content: space-evenly;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    background-color: #e9c46a;
+                    font-weight: bold;
+                    padding: 10px 0;
+                    .medida {
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    .peso {
+                        font-family: 'Roboto', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+  
+@media screen and (max-width: 991px) {
+    .muebles__container__text {
+        padding-top: 50px !important;
+        &:hover {
+            cursor: pointer !important;
+        }
+    }
+    .muebles__box {
+        grid-template-columns: repeat(2,1fr) !important;
+        grid-template-rows: repeat(3,1fr) !important;
+        grid-template-areas:
+        "card-1 card-2"
+        "card-3 card-4"
+        "card-5 card-6" !important;
+        &:hover {
+            transform: translateY(0) !important;
+            box-shadow: 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .muebles__container__text {
+        grid-template-columns: repeat(2,1fr) !important;
+        grid-template-rows: repeat(2,1fr) !important;
+        grid-template-areas:
+        "telas-1 telas-2"
+        "telas-3 catalogo" !important;
+        padding-top: 0px !important;
+        .container__telas {
+            img {
+                height: 200px !important; width: 150px !important;
+            }
+        }
+        .telas-3 {
+            padding: 20px 0 50px 0 !important;
+        }
+        .catalogo {
+            padding-right: 20px !important;
+        } 
+    }
+    .muebles__box {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(6,1fr) !important;
+        grid-template-areas:
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5" 
+        "card-6" !important;
+        .card {
+            margin: 30px 0 !important;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .muebles__container__text {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(3,1fr) 0.5fr !important;
+        grid-template-areas:
+        "telas-1"
+        "telas-2"
+        "telas-3"
+        "catalogo" !important;
+        padding-top: 0px;
+        .container__telas {
+            img {
+                height: 200px !important; width: 150px !important;
+            }
+        }
+        .telas-3 {
+            padding: 20px 0 50px 0 !important;
+        }
+        .catalogo {
+            padding: 0 20px 20px 20px !important;
+        }
+    }
+}

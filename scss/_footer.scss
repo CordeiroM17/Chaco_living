@@ -1,0 +1,25 @@
+/* ---------------Footer--------------- */
+
+footer {
+    height: 100%;
+    background-color: #0b0b0b;
+    justify-content: center;
+    text-align: center;
+    .footer__container__images {
+        margin: 40px 0 15px 0;
+        a { 
+            img {
+                height: 50px; width: 50px;
+            }
+        } 
+    }
+    h2 {
+        color: #FFFFFF;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    p {
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+}
