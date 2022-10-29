@@ -1,4 +1,4 @@
-/* ---------------Main empresa--------------- */
+/*<---------------- MAIN EMPRESA ---------------->*/
 
 .main__empresa {
     background-image: url(../images/fondo__empresa.jpg);
@@ -117,56 +117,6 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-        }
-    }
-}
-@media screen and (max-width:991px) {
-    .empresa {
-        grid-template-columns: repeat(2, 1fr) !important;
-        grid-template-rows: repeat(3, 1fr) !important;
-        grid-template-areas: 
-        "parte_1 parte_2"
-        "parte_3 parte_4"
-        "parte_5 parte_6" !important;
-        .empresa__box {
-            margin: 30px 0 !important;
-            .titulo {
-                &:hover {
-                    transform: translateY(0) !important;
-                    text-decoration: none !important;
-                }
-            }
-            .titulo--menos__padding {
-                &:hover {
-                    transform: translateY(0) !important;
-                    text-decoration: none !important;
-                }
-            }
-        }
-    } 
-}
-@media screen and (max-width: 704px) {
-    .empresa {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: repeat(6, 1fr) !important;
-        grid-template-areas: 
-        "parte_1"
-        "parte_2"
-        "parte_3"
-        "parte_4"
-        "parte_5"
-        "parte_6" !important;
-        .empresa__box {
-            height: 100px; width: 250px !important;
-            margin: 20px 0 !important;
-            .titulo {
-                font-size: 18px !important;
-                padding-top: 65px !important;
-            }
-            .titulo--menos__padding {
-                font-size: 18px !important;
-                padding-top: 55px !important;
-            }
         }
     }
 }

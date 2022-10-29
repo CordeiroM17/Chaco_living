@@ -1,9 +1,11 @@
-/* Variables */
+/*<---------------- VARIABLES ---------------->*/
 $color-principal: #0e9e2c;
 $color-secundario: #0b0b0b;
 $color-terciario: #e9c46a;
 $color-white: #FFFFFF;
 $color-filtro: rgba(225, 255, 190, 0.2);
+
+/*<---------------- ESTRUCTURA EN IMPORTS ---------------->*/
 
 @import "reset"; /* Check */
 
@@ -20,3 +22,5 @@ $color-filtro: rgba(225, 255, 190, 0.2);
 @import "contacto"; /* Check */
 
 @import "footer";  /* Check */
+
+@import "querys"; 

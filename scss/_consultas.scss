@@ -1,0 +1,28 @@
+/*<---------------- MAIN CONSULTAS ---------------->*/
+
+.main__consultas {
+    background-color: #0b0b0b;
+    padding-top: 100px;
+    h1 {
+        color: $color-terciario;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .consultas__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .accordion {
+            width: 90%;
+            .accordion-item {
+                margin-bottom: 40px;
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 16px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}

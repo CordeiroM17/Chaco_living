@@ -1,5 +1,6 @@
-/* ---------------Header--------------- */
-/* ---------------Navbar--------------- */
+/*<---------------- HEADER ---------------->*/
+/*<---------------- Navbar ---------------->*/
+
 header {
     height: 80px;
     background-color: $color-principal;
@@ -55,44 +56,5 @@ header {
                 }
              }
         }
-    }
-}
-@media screen and (max-width: 991px) {
-    header {
-        z-index: 100;
-        .navbar {
-            padding: 0 0 0 0;
-            .nav_container {
-                width: 100%;
-                .nav__logo__container {
-                    height: 80px; width: 180px;
-                    background: none;
-                    margin-left: 6%;
-                    .logo {
-                        margin: 0%;
-                    }
-                }
-            }
-        }
-        .navbar_btn {
-            margin-right: 6%;
-        }
-        .nav__list__container {
-            background-color: $color-principal;
-            ul {
-                padding-right: 0;
-                li {
-                    padding: 10px;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 576px) {
-    .nav__logo__container {
-        margin-left: 2% !important;
-    }
-    .navbar_btn {
-        margin-right: 2% !important;
     }
 }

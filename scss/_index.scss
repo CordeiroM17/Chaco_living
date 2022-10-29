@@ -1,4 +1,5 @@
-/* ---------------Main Index--------------- */
+/*<---------------- MAIN INDEX ---------------->*/
+
 .main__principal {
     background-image: url(../images/fondo__index.jpg);
     background-repeat: no-repeat;
@@ -50,12 +51,12 @@
                     button {
                         height: 40px; width: 120px;
                         font-weight: 500;
-                        color: white;
+                        color: $color-white;
                         text-transform: uppercase;
                         background-color: black;
                         transition: 0.4s;
                         &:hover {
-                            background-color: white;
+                            background-color: $color-white;
                             color: black;
                             cursor: pointer;
                         }
@@ -63,63 +64,5 @@
                 }  
             }
         }   
-    }
-}
-@media screen and (max-width: 991px) {
-    .main__container__text {
-        text-align: center;
-        padding-top: 50px;
-    }
-    .main__box__container {
-        margin: 50px 0 0 0 !important;
-        .box__container {
-            height: 100% !important; width: 100% !important;
-            margin: 0 !important;
-            background-color: #FFFFFF;
-            border-radius: 0 !important;
-            justify-content: center;
-            box-shadow: 0 0 0 0 !important;
-            .box__container__text {
-                padding: 20px 0;
-                border-bottom: 1px solid black;
-            }
-            .sin__borde {
-                border-bottom: none;
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 576px) {
-    .main__container__text {
-        h1 {
-            font-size: 45px !important;
-            height: 60px !important;
-        }
-        h2 {
-            font-size: 20px !important;
-        }
-        p {
-            font-size: 14px !important;
-        }
-    }
-    .box__container {
-        padding: 0 10% !important;
-    }
-}
-@media screen and (max-width: 425px) {
-    .main__container__text {
-        h1 {
-            font-size: 33px !important;
-            height: 45px !important;
-        }
-        h2 {
-            font-size: 16px !important;
-        }
-        p {
-            font-size: 12px !important;
-        }
     }
 }
