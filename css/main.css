@@ -76,9 +76,10 @@ header {
 .main__principal {
   background-image: url(../images/fondo__index.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   .main__principal .filtro {
-    background-color: rgba(225, 255, 190, 0.2);
+    background-color: rgba(225, 255, 190, 0.3);
     padding: 0; }
     .main__principal .filtro .main__container__text {
       padding: 100px 0 0 10%;
@@ -97,7 +98,8 @@ header {
       .main__principal .filtro .main__container__text p {
         padding-top: 10px;
         margin-bottom: 0%;
-        color: black; }
+        color: black;
+        font-weight: 600; }
     .main__principal .filtro .main__box__container {
       margin: 100px 0; }
       .main__principal .filtro .main__box__container .box__container {
@@ -138,13 +140,14 @@ header {
   background-size: cover;
   background-position: center; }
   .main__empresa .filtro {
-    background-color: rgba(225, 255, 190, 0.2); }
+    background-color: rgba(225, 255, 190, 0.3); }
   .main__empresa .empresa {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "parte_1 parte_2 parte_3" "parte_4 parte_5 parte_6";
-    justify-items: center; }
+    justify-items: center;
+    /* Este bucle crea 6 containers con imagenes distintas */ }
     .main__empresa .empresa .empresa__box {
       display: flex;
       height: 150px;
@@ -204,27 +207,32 @@ header {
       grid-area: parte_1;
       background-image: url(../images/empresa/nuestra_historia.jpg);
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      background-position: center; }
     .main__empresa .empresa .container2 {
       grid-area: parte_2;
       background-image: url(../images/empresa/fabricacion.jpg);
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      background-position: center; }
     .main__empresa .empresa .container3 {
       grid-area: parte_3;
       background-image: url(../images/empresa/embalaje.jpg);
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      background-position: center; }
     .main__empresa .empresa .container4 {
       grid-area: parte_4;
       background-image: url(../images/empresa/fsc.jpg);
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      background-position: center; }
     .main__empresa .empresa .container5 {
       grid-area: parte_5;
       background-image: url(../images/empresa/logistica.jpg);
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      background-position: center; }
     .main__empresa .empresa .container6 {
       grid-area: parte_6;
       background-image: url(../images/empresa/rsc.jpg);
@@ -235,6 +243,7 @@ header {
 /* Check */
 /*<---------------- MAIN MUEBLES ---------------->*/
 .main__muebles {
+  background-repeat: no-repeat;
   /* Contenedor con texto muebles */
   /* Contenedor con muebles */ }
   .main__muebles .muebles__container__text {
@@ -243,13 +252,20 @@ header {
     grid-template-rows: 1fr 0.5fr;
     grid-template-areas: "telas-1 telas-2 telas-3" "catalogo catalogo catalogo";
     padding-top: 100px;
-    background-color: #0b0b0b; }
+    background-color: #0b0b0b;
+    /* Agrega 3 grid areas */ }
     .main__muebles .muebles__container__text .telas-1 {
       grid-area: telas-1; }
     .main__muebles .muebles__container__text .telas-2 {
       grid-area: telas-2; }
     .main__muebles .muebles__container__text .telas-3 {
       grid-area: telas-3; }
+    .main__muebles .muebles__container__text .telas-4 {
+      grid-area: telas-4; }
+    .main__muebles .muebles__container__text .telas-5 {
+      grid-area: telas-5; }
+    .main__muebles .muebles__container__text .telas-6 {
+      grid-area: telas-6; }
     .main__muebles .muebles__container__text .container__telas {
       display: flex;
       justify-content: center;
@@ -294,7 +310,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "card-1 card-2 card-3" "card-4 card-5 card-6"; }
+    grid-template-areas: "card-1 card-2 card-3" "card-4 card-5 card-6";
+    /* Agrega 6 grid areas */ }
     .main__muebles .muebles__box .card-1 {
       grid-area: card-1; }
     .main__muebles .muebles__box .card-2 {
@@ -313,6 +330,7 @@ header {
       align-items: center;
       flex-direction: column; }
       .main__muebles .muebles__box .muebles__container__card .card {
+        height: 412px;
         width: 300px;
         border-radius: 18px;
         background-color: #FFFFFF;
@@ -325,6 +343,7 @@ header {
           transform: translateY(-3%);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); }
         .main__muebles .muebles__box .muebles__container__card .card .carousel {
+          background-repeat: no-repeat;
           /* Ajustando imagenes */ }
           .main__muebles .muebles__box .muebles__container__card .card .carousel img {
             border-top-left-radius: 15px;
@@ -410,6 +429,7 @@ header {
 
 /*<---------------- MAIN CONTACTO ---------------->*/
 .main__contacto {
+  background-repeat: no-repeat;
   /* Pad con informacion */
   /* Formulario */ }
   .main__contacto .contacto__container__text {
@@ -417,7 +437,7 @@ header {
     padding: 0;
     background-color: #0e9e2c; }
     .main__contacto .contacto__container__text .container__text__box {
-      padding: 100px 10% 100px 10%;
+      padding: 100px 10% 0 10%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -426,10 +446,16 @@ header {
         font-size: 30px;
         color: #FFFFFF;
         text-transform: uppercase; }
-      .main__contacto .contacto__container__text .container__text__box h2 {
+      .main__contacto .contacto__container__text .container__text__box p {
         padding-top: 10px;
-        font-size: 20px; }
+        font-size: 20px;
+        color: #FFFFFF; }
       .main__contacto .contacto__container__text .container__text__box .simple__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100px;
         width: 100%;
         background-color: #FFFFFF;
         border-radius: 15px;

@@ -4,6 +4,7 @@
     background-image: url(../images/fondo__index.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     .filtro {
         background-color: $color-filtro;
         padding: 0;
@@ -27,6 +28,7 @@
                 padding-top: 10px;
                 margin-bottom: 0%;
                 color: black;
+                font-weight: 600;
             }
         }
         .main__box__container {

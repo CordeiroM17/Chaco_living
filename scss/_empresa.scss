@@ -81,42 +81,28 @@
                 }
             } 
         }
-        .container1 {
-            grid-area: parte_1;
-            background-image: url(../images/empresa/nuestra_historia.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .container2 {
-            grid-area: parte_2;
-            background-image: url(../images/empresa/fabricacion.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .container3 {
-            grid-area: parte_3;
-            background-image: url(../images/empresa/embalaje.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .container4 {
-            grid-area: parte_4;
-            background-image: url(../images/empresa/fsc.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .container5 {
-            grid-area: parte_5;
-            background-image: url(../images/empresa/logistica.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .container6 {
-            grid-area: parte_6;
-            background-image: url(../images/empresa/rsc.jpg);
+        /* Este bucle crea 6 containers con imagenes distintas */
+        $img: (
+            container1: url(../images/empresa/nuestra_historia.jpg),
+            container2: url(../images/empresa/fabricacion.jpg),
+            container3: url(../images/empresa/embalaje.jpg),
+            container4: url(../images/empresa/fsc.jpg),
+            container5: url(../images/empresa/logistica.jpg),
+            container6: url(../images/empresa/rsc.jpg)
+        );
+        @mixin background_no-repeat_cover_center {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+        }
+        $i: 1;
+        @each $container, $url in $img {
+            .#{$container} {
+                grid-area: parte_#{$i};
+                background-image: $url;
+                @include background_no-repeat_cover_center;
+                $i: $i + 1;
+            }
         }
     }
 }

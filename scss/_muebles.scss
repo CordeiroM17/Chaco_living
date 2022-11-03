@@ -1,6 +1,6 @@
 /*<---------------- MAIN MUEBLES ---------------->*/
-
 .main__muebles {
+    background-repeat: no-repeat;
     /* Contenedor con texto muebles */
     .muebles__container__text {
         display: grid;
@@ -11,14 +11,11 @@
         "catalogo catalogo catalogo";
         padding-top: 100px;
         background-color: $color-secundario;
-        .telas-1 {
-            grid-area: telas-1;
-        }
-        .telas-2 {
-            grid-area: telas-2;
-        }
-        .telas-3 {
-            grid-area: telas-3;
+        /* Agrega 3 grid areas */
+        @for $cont from 1 through 6 {
+            .telas-#{$cont} {
+                grid-area: telas-#{$cont};
+            }
         }
         .container__telas {
             display: flex;
@@ -75,23 +72,11 @@
         grid-template-areas:
         "card-1 card-2 card-3"
         "card-4 card-5 card-6";
-        .card-1 {
-            grid-area: card-1;
-        }
-        .card-2 {
-            grid-area: card-2;
-        }
-        .card-3 {
-            grid-area: card-3;
-        }
-        .card-4 {
-            grid-area: card-4;
-        }
-        .card-5 {
-            grid-area: card-5;
-        }
-        .card-6 {
-            grid-area: card-6;
+        /* Agrega 6 grid areas */
+        @for $i from 1 through 6 {
+            .card-#{$i} {
+                grid-area: card-#{$i};
+            }
         }
         .muebles__container__card {
             display: flex;
@@ -99,7 +84,7 @@
             align-items: center;
             flex-direction: column;
             .card {
-                width: 300px;
+                height: 412px; width: 300px;
                 border-radius: 18px;
                 background-color: $color-white;
                 box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
@@ -112,6 +97,7 @@
                     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
                 }
                 .carousel {
+                    background-repeat: no-repeat;
                     img {
                         border-top-left-radius: 15px;
                         border-top-right-radius: 15px;
