@@ -90,7 +90,7 @@
             container5: url(../images/empresa/logistica.jpg),
             container6: url(../images/empresa/rsc.jpg)
         );
-        @mixin background_no-repeat_cover_center {
+        @mixin background_no-repeat_cover-center {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -100,7 +100,7 @@
             .#{$container} {
                 grid-area: parte_#{$i};
                 background-image: $url;
-                @include background_no-repeat_cover_center;
+                @include background_no-repeat_cover-center;
                 $i: $i + 1;
             }
         }
