@@ -144,11 +144,15 @@
     .main__empresa {
         .empresa {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: 0.2fr repeat(3, 1fr);
             grid-template-areas: 
+            "titulo titulo"
             "parte_1 parte_2"
             "parte_3 parte_4"
             "parte_5 parte_6";
+            h1 {
+                margin-top: 50px;
+            }
             .empresa__box {
                 margin: 30px 0;
                 .empresa__button {
@@ -174,14 +178,19 @@
     .main__empresa {
         .empresa {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 1fr);
+            grid-template-rows: 0.2fr repeat(6, 1fr);
             grid-template-areas: 
+            "titulo"
             "parte_1"
             "parte_2"
             "parte_3"
             "parte_4"
             "parte_5"
             "parte_6";
+            h1 {
+                margin-top: 30px;
+                font-size: 22px;
+            }
             .empresa__box {
                 height: 100px; width: 250px;
                 margin: 20px 0;
@@ -209,6 +218,9 @@
             &:hover {
                 cursor: pointer;
             }
+            h1 {
+                padding: 50px 20px 0 20px;
+            }
         }
         .muebles__box {
             grid-template-columns: repeat(2,1fr);
@@ -229,11 +241,15 @@
     .main__muebles {
         .muebles__container__text {
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(2,1fr);
+            grid-template-rows: 0.5fr repeat(2,1fr);
             grid-template-areas:
+            "titulo titulo"
             "telas-1 telas-2"
             "telas-3 catalogo";
             padding-top: 0px;
+            h1 {
+                font-size: 22px;
+            }
             .container__telas {
                 .telas {
                     img {
@@ -269,13 +285,17 @@
     .main__muebles {
         .muebles__container__text {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3,1fr) 0.5fr;
+            grid-template-rows: 0.5fr repeat(3,1fr) 0.5fr;
             grid-template-areas:
+            "titulo"
             "telas-1"
             "telas-2"
             "telas-3"
             "catalogo";
             padding-top: 0px;
+            h1 {
+                font-size: 20px;
+            }
             .container__telas {
                 img {
                     height: 200px; width: 150px;

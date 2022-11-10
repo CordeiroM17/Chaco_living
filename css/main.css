@@ -144,10 +144,17 @@ header {
   .main__empresa .empresa {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "parte_1 parte_2 parte_3" "parte_4 parte_5 parte_6";
+    grid-template-rows: 0.1fr repeat(2, 1fr);
+    grid-template-areas: "titulo titulo titulo" "parte_1 parte_2 parte_3" "parte_4 parte_5 parte_6";
     justify-items: center;
     /* Este bucle crea 6 containers con imagenes distintas */ }
+    .main__empresa .empresa h1 {
+      grid-area: titulo;
+      margin-top: 100px;
+      text-align: center;
+      color: #0b0b0b;
+      font-size: 35px;
+      text-transform: uppercase; }
     .main__empresa .empresa .empresa__box {
       display: flex;
       height: 150px;
@@ -249,11 +256,19 @@ header {
   .main__muebles .muebles__container__text {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 0.5fr;
-    grid-template-areas: "telas-1 telas-2 telas-3" "catalogo catalogo catalogo";
-    padding-top: 100px;
+    grid-template-rows: 0.9fr 0.9fr 0.5fr;
+    grid-template-areas: "titulo titulo titulo" "telas-1 telas-2 telas-3" "catalogo catalogo catalogo";
     background-color: #0b0b0b;
+    padding: 0;
     /* Agrega 3 grid areas */ }
+    .main__muebles .muebles__container__text h1 {
+      grid-area: titulo;
+      padding: 100px 20px 0 20px;
+      color: #e9c46a;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 35px;
+      margin: 0; }
     .main__muebles .muebles__container__text .telas-1 {
       grid-area: telas-1; }
     .main__muebles .muebles__container__text .telas-2 {
@@ -647,8 +662,10 @@ footer {
 @media screen and (max-width: 991px) {
   .main__empresa .empresa {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "parte_1 parte_2" "parte_3 parte_4" "parte_5 parte_6"; }
+    grid-template-rows: 0.2fr repeat(3, 1fr);
+    grid-template-areas: "titulo titulo" "parte_1 parte_2" "parte_3 parte_4" "parte_5 parte_6"; }
+    .main__empresa .empresa h1 {
+      margin-top: 50px; }
     .main__empresa .empresa .empresa__box {
       margin: 30px 0; }
       .main__empresa .empresa .empresa__box .empresa__button .titulo:hover {
@@ -661,8 +678,11 @@ footer {
 @media screen and (max-width: 704px) {
   .main__empresa .empresa {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "parte_1" "parte_2" "parte_3" "parte_4" "parte_5" "parte_6"; }
+    grid-template-rows: 0.2fr repeat(6, 1fr);
+    grid-template-areas: "titulo" "parte_1" "parte_2" "parte_3" "parte_4" "parte_5" "parte_6"; }
+    .main__empresa .empresa h1 {
+      margin-top: 30px;
+      font-size: 22px; }
     .main__empresa .empresa .empresa__box {
       height: 100px;
       width: 250px;
@@ -680,6 +700,8 @@ footer {
     padding-top: 50px; }
     .main__muebles .muebles__container__text:hover {
       cursor: pointer; }
+    .main__muebles .muebles__container__text h1 {
+      padding: 50px 20px 0 20px; }
   .main__muebles .muebles__box {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -691,9 +713,11 @@ footer {
 @media screen and (max-width: 704px) {
   .main__muebles .muebles__container__text {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "telas-1 telas-2" "telas-3 catalogo";
+    grid-template-rows: 0.5fr repeat(2, 1fr);
+    grid-template-areas: "titulo titulo" "telas-1 telas-2" "telas-3 catalogo";
     padding-top: 0px; }
+    .main__muebles .muebles__container__text h1 {
+      font-size: 22px; }
     .main__muebles .muebles__container__text .container__telas .telas img {
       height: 200px;
       width: 150px; }
@@ -711,9 +735,11 @@ footer {
 @media screen and (max-width: 425px) {
   .main__muebles .muebles__container__text {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr) 0.5fr;
-    grid-template-areas: "telas-1" "telas-2" "telas-3" "catalogo";
+    grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr;
+    grid-template-areas: "titulo" "telas-1" "telas-2" "telas-3" "catalogo";
     padding-top: 0px; }
+    .main__muebles .muebles__container__text h1 {
+      font-size: 20px; }
     .main__muebles .muebles__container__text .container__telas img {
       height: 200px;
       width: 150px; }

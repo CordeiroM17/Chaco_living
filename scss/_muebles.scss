@@ -5,12 +5,22 @@
     .muebles__container__text {
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 1fr 0.5fr;
+        grid-template-rows: 0.9fr 0.9fr 0.5fr;
         grid-template-areas:
+        "titulo titulo titulo"
         "telas-1 telas-2 telas-3"
         "catalogo catalogo catalogo";
-        padding-top: 100px;
         background-color: $color-secundario;
+        padding: 0;
+        h1 {
+            grid-area: titulo;
+            padding: 100px 20px 0 20px;
+            color: $color-terciario;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 35px;
+            margin: 0;
+        }
         /* Agrega 3 grid areas */
         @for $cont from 1 through 6 {
             .telas-#{$cont} {
