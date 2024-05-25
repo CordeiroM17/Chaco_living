@@ -51,6 +51,7 @@ To run this project locally, follow these steps:
 
 ## Usage
 Navigate through the different sections of the webpage to explore:
+
 - **Home**: An introduction to Chaco Living, highlighting our commitment to elegance and comfort.
 - **Company**: Learn more about Chaco Living's history, mission, and values.
 - **Furniture**: Browse various sofa models and their fabric options.
